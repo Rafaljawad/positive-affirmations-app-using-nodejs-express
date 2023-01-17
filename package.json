@@ -1,0 +1,19 @@
+{
+  "name": "affrimation-app",
+  "version": "1.0.0",
+  "description": "my first affrimation app",
+ 
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "commonjs",
+  "author": "Rafal Jawad",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+    
+  }
+}
