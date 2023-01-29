@@ -160,16 +160,16 @@ var affirmations=[
     audio:"/music/ages-ago-brock-hewitt-stories-in-sound-main-version-16212-04-06.mp3",
     },
 
-    {id:35,
+    {id:27,
         content:"I release all negative thoughts of the past and all worries about the future.",
         img:"/images/Image-by-Gerd-Altmann-from-Pixabay.jpg",
         audio:"/music/ages-ago-brock-hewitt-stories-in-sound-main-version-16212-04-06.mp3"
         },
-    {id:28,
-        content:"I am strong , I can achieve anything on my way. ",
-        img:"/images/a10strong-women.jpg",
-        audio:"/music/peaceful-morning-yeti-music-main-version-00-35-3025.mp3",
-        },
+        {id:28,
+            content:"I release all negative thoughts of the past and all worries about the future.",
+            img:"/images/think-positive.png",
+            audio:"/music/ages-ago-brock-hewitt-stories-in-sound-main-version-16212-04-06.mp3"
+            },
     {id:29,
     content:"I am free from the need to impress others . ",
     img:"/images/three.jpg",
@@ -195,7 +195,7 @@ var affirmations=[
     img:"/images/six.jpg",
     audio:"/music/peaceful-morning-yeti-music-main-version-00-35-3025.mp3",
     },
-    
+ 
     
     {id:33,
         content:"I live my life the way I like and I don't care about how others think. ",
@@ -209,13 +209,11 @@ var affirmations=[
     audio:"/music/peaceful-morning-yeti-music-main-version-00-35-3025.mp3",
     },
     
-    
     {id:35,
-    content:"I release all negative thoughts of the past and all worries about the future.",
-    img:"/images/think-positive.png",
-    audio:"/music/ages-ago-brock-hewitt-stories-in-sound-main-version-16212-04-06.mp3"
-    },
-    
+        content:"I am strong , I can achieve anything on my way. ",
+        img:"/images/a10strong-women.jpg",
+        audio:"/music/peaceful-morning-yeti-music-main-version-00-35-3025.mp3",
+        },
     
     {id:36,
     content:"life is filled with opportunities and I am the one who will get them easily.",
