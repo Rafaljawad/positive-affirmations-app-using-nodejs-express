@@ -3,4 +3,6 @@ package-lock.json
 node_modules/*
 
 public/images
+public/music
+public/videos
 steps/*
