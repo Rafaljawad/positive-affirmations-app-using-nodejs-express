@@ -6,48 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/css/style.css" rel="stylesheet" type="text/css">
-     <!--google font link-->
-     <link
-     href="https://fonts.googleapis.com/css2?family=Kings&family=Montserrat:wght@100&display=swap"
-     rel="stylesheet"
-   />
-   <!--font awsome icon link-->
-   <script src="https://kit.fontawesome.com/df5aa5937e.js" crossorigin="anonymous"></script>
+        <!--google font link-->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Kings&family=Montserrat:wght@100&display=swap"
+        rel="stylesheet"
+    />
+    <!--font awsome icon link-->
+    <script src="https://kit.fontawesome.com/df5aa5937e.js" crossorigin="anonymous"></script>
 </head>
 <body>
- 
-  
-    <!-- header -->
+
+    <header>
+        <h1 class="name"> Affirmations</h1>
+        <nav class="navigation">
+        <a href="/">Home</a>
+        <a href="https://motivationping.com/affirmations/" target="_blank">More </a>
+        <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- under-header -->
     <section class="header">
         <div class="name-section">
         <h2 class="heading-main">Daily Positive <strong><i>Affirmations</i></strong> <br /></h2><br>
-        <p>Beautiful and meaningful affirmations that help you to live and feel happier.Just take a deep breathe and enjoy the power of word with a calm music. </p>
-        <h3> <%= date%> </h3>
+        <p>Beautiful and meaningful affirmations that help you to live and feel happier.Just take a deep breathe and enjoy the power of the word with a calm music. </p>
+        <h3 class="date"> <i><%= date%></i> </h3>
         <h1><strong><i><%= aff %> </i></strong></h1>
         </div>
+        <!-- <div class="vedio-section">
+            <video autoplay="" loop="" muted="" playsinline="" source src="/videos/pexels-cup-of-couple-7303017.mp4" type="video/mp4" class="vid-s1" width="400" height="400">Your browser does not support the video tag.</video>
+        </div> -->
+        <section class="middle">
+            <div class="vedio-section">
+                <video autoplay="" loop="" muted="" playsinline="" source src="/videos/pexels-cup-of-couple-7303017.mp4" type="video/mp4" class="vid-s1" width="100%" height="100%">Your browser does not support the video tag.</video>
+            </div>
+            <audio controls loop autoplay class="aud">
+                <source src="/music/mindfulness-journey-ambient-boy-main-version-13506-09-58.mp3" type="audio/mp3" >
+            </audio>
+        </section>
     </section>
-    
+
+    <hr>
+    <br>
         <div class="main">
-            <% for(var singlAff of affirmations ) { %>
+            <% for(var singlAff of newAff ) { %>
             <div class="card">
                     <img src="<%= singlAff.img %>" alt="">
                 <div class="info">
                 <h3><%= singlAff.content %></h3>
-                <audio controls autoplay loop>
+                <!-- we add autoplay if we want it to display automatically -->
+                <audio controls loop>
                     <source src="<%= singlAff.audio %>" type="audio/mp3">
                 </audio>
                 </div>
             </div>
             <% } %>
+         
+        </div>
+        <div class="more-links">
+            <a href="/" class="num" onclick="changeBg();" onmouseleave="removeBg();">1</a>
+            <a href="/2">2</a>
+            <a href="/3">3</a>
+            <a href="/4">4</a>
+            <a href="/5">5</a>
+            <a href="/6">6</a>
+            <a href="/2">Next >> </a>
         </div>
         <footer >
             <p class="footer-title"><span>© Copyright <%= year %> Rafal Jawad  </span></p>
             <p class="footer-title"><span>© Copyright <%= year %> Images<a href="https://pixabay.com/" target="_blank">@Pixabay</a></span></p>
-            <div class="social-icons">
+            <div class="social-icons" id="contact">
                 <a href="https://www.linkedin.com/in/rafal-jawad/"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/Rafaljawad"><i class="fab fa-github"></i></a>
                 <a href="mailto:rafal.qasim@gmail.com"><i class="fas fa-envelope"></i></a>
             </div>
         </footer>
+        <script src="/js/script.js"></script>
 </body>
 </html>

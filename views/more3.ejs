@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+     <!--google font link-->
+     <link
+     href="https://fonts.googleapis.com/css2?family=Kings&family=Montserrat:wght@100&display=swap"
+     rel="stylesheet"
+   />
+   <!--font awsome icon link-->
+   <script src="https://kit.fontawesome.com/df5aa5937e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+    <header>
+        <h1 class="name"> Affirmations</h1>
+        <nav class="navigation">
+            <a href="/">Home</a>
+            <a href="https://motivationping.com/affirmations/"  target="_blank">More </a>
+            <a href="#contact">Contact</a>
+            </nav>
+    </header>
+  
+
+    
+        <div class="main">
+            <% for(var singlAff of newAff ) { %>
+            <div class="card">
+                    <img src="<%= singlAff.img %>" alt="">
+                <div class="info">
+                <h3><%= singlAff.content %></h3>
+                <!-- we add autoplay if we want it to display automatically -->
+                <audio controls loop>
+                    <source src="<%= singlAff.audio %>" type="audio/mp3">
+                </audio>
+                </div>
+            </div>
+            <% } %>
+            <div class="more-links">
+                <a href="/2"> << Previous</a>
+                <a href="/">1</a>
+                <a href="/2">2</a>
+                <a href="/3">3</a>
+                <a href="/4">4</a>
+                <a href="/5">5</a>
+                <a href="/6">6</a>
+                <a href="/4">Next >> </a>
+            </div>
+        </div>
+        <footer >
+            <p class="footer-title"><span>© Copyright <%= year %> Rafal Jawad  </span></p>
+            <p class="footer-title"><span>© Copyright <%= year %> Images<a href="https://pixabay.com/" target="_blank">@Pixabay</a></span></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/rafal-jawad/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Rafaljawad"><i class="fab fa-github"></i></a>
+                <a href="mailto:rafal.qasim@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </footer>
+</body>
+</html>
