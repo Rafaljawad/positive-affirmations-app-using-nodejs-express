@@ -99,6 +99,7 @@ header {
         color:#edd3ca;
         background-color: #090c0f;
         padding:2px 10px;
+        display: block;
     }
 
 .middle{
@@ -221,3 +222,23 @@ footer a{
         }
     }
 
+
+
+
+
+
+    @media screen and (max-width: 767px){
+        header{
+          padding:20px 0;
+          display: flex;
+          justify-content: space-around;
+          font-size: 0.8em;
+        }
+
+        .header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
