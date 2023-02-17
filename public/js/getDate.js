@@ -16,11 +16,11 @@ var getFullDateVar=function getFullDate(){
 
     switch (month+1) {
     case 1:
-    var monthWord="Januery"
+    var monthWord="January"
     break;
 
     case 2:
-    var monthWord="Feburery"
+    var monthWord="February"
     break;
 
     case 3:

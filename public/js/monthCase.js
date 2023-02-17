@@ -4,9 +4,9 @@ var monthCase=function (){
   let month = objectDate.getMonth();
  console.log("***************",month+1); // 8
  if(month+1==1){
-    var start=0;
-    var end=10;
-    var obj={str:start,end:end}
+      var start=0;
+      var end=10;
+      var obj={str:start,end:end}
  }
 
  return obj

@@ -132,7 +132,7 @@ header {
     }
     .card{
 
-    background-color: #edd3ca;
+    /* background-color: #edd3ca; */
     width:20em;
     height:450px;
     box-shadow: 0 5px 25px rgba(1 1 1/15%);

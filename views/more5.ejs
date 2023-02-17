@@ -25,6 +25,27 @@
             </nav>
     </header>
  
+      <!-- under-header -->
+      <section class="header">
+        <div class="name-section">
+        <h2 class="heading-main">Daily Positive <strong><i>Affirmations</i></strong> <br /></h2><br>
+        <p>Beautiful and meaningful affirmations that help you to live and feel happier.Just take a deep breathe and enjoy the power of the word with a calm music. </p>
+        <h3 class="date"> <i><%= date%></i> </h3>
+        <h1><strong><i><%= aff %> </i></strong></h1>
+        </div>
+        <!-- <div class="vedio-section">
+            <video autoplay="" loop="" muted="" playsinline="" source src="/videos/pexels-cup-of-couple-7303017.mp4" type="video/mp4" class="vid-s1" width="400" height="400">Your browser does not support the video tag.</video>
+        </div> -->
+        <section class="middle">
+            <div class="vedio-section">
+                <video autoplay="" loop="" muted="" playsinline="" source src="/videos/pexels-cup-of-couple-7303017.mp4" type="video/mp4" class="vid-s1" width="100%" height="100%">Your browser does not support the video tag.</video>
+            </div>
+            <audio controls loop autoplay class="aud">
+                <source src="/music/mindfulness-journey-ambient-boy-main-version-13506-09-58.mp3" type="audio/mp3" >
+            </audio>
+        </section>
+    </section>
+
     
         <div class="main">
             <% for(var singlAff of newAff ) { %>
